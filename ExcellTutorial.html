@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Excel Tutorial</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        header {
+            background-color: #3cb371;
+            padding: 10px;
+            text-align: center;
+            font-size: 25px;
+            color: white;
+        }
+        /* Create two columns/boxes that floats next to each other */
+        nav {
+            float: right;
+            width: 20%;
+            /*height: 300px; !* only for demonstration, should be removed *!*/
+            background: #88fc88;
+            padding: 10px;
+        }
+        /* Style the list inside the menu */
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            direction: rtl;
+        }
+        article {
+            float: left;
+            padding: 20px;
+            width: 80%;
+            background-color: #f1f1f1;
+            /*height: 300px; !* only for demonstration, should be removed *!*/
+            direction: rtl;
+        }
+        /* Clear floats after the columns */
+        section::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        /* Style the footer */
+        footer {
+            background-color: #777;
+            padding: 10px;
+            text-align: center;
+            direction: rtl;
+            color: white;
+        }
+
+        /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+        @media (max-width: 600px) {
+            nav, article {
+                width: 100%;
+                height: auto;
+            }
+        }
+        /*h1.bordered {color: white; border: solid; background-color: seagreen; height: 50px; width: 400px;*/
+        /*margin: auto; padding: 10px 10px 10px 70px}*/
+        p.pa {
+            font-size: 20px;
+            font-family: "fantasy";
+            direction: rtl; text-align: right
+        }
+        p.pa2 {
+            font-size: 15px;
+            font-family: "fantasy";
+            direction: rtl; text-align: right
+        }
+
+    </style>
+</head>
+<body>
+<!--<h1 class="bordered">Let's learn Excel with me</h1>-->
+<header>
+    <h1>Let's learn Excel with me</h1>
+    <h1 style="font-size: 25px">یادگیری اکسل به زبان ساده</h1>
+</header>
+<section>
+    <nav>
+        <h3 dir="rtl">لیست لینک های آموزش :</h3>
+        <ul>
+            <li><a href="https://drive.google.com/open?id=1-ioFZSofJ6qpHH5Y-qASkL-Ezjtm7AFC&authuser=l.diba4%40gmail.com&usp=drive_fs" target="_blank">جلسه اول : آشنایی با محیط اکسل</a><br></li>
+            <br>
+            <li><a href="https://drive.google.com/open?id=10kyIa-CoEEH5DjbuRi7q1XnloOe92_T3&authuser=l.diba4%40gmail.com&usp=drive_fs" target="_blank">جلسه دوم : ایجاد یک جدول</a><br></li>
+            <br>
+            <li><a href="https://drive.google.com/open?id=1-Dmlpey6XHFgAXVZakDbQQs3_rVjCt6V&authuser=l.diba4%40gmail.com&usp=drive_fs" target="_blank"> جلسه سوم : خطوط داخل جدول(Border)</a><br></li>
+            <br>
+            <li><a href="https://drive.google.com/open?id=1-HLhGyE45JeD_pb7ox100wobRt7XWMSJ&authuser=l.diba4%40gmail.com&usp=drive_fs" target="_blank"> جلسه چهارم : انتخاب فونت داخل جدول(Font)</a><br></li>
+            <br>
+            <li><a href="https://drive.google.com/open?id=1-t9qRBHOfnzuDonZ4QlroBTkmtTOjP9s&authuser=l.diba4%40gmail.com&usp=drive_fs" target="_blank"> جلسه پنجم : مکان نمایی محتویات یک سلول(Alignment)</a><br></li>
+            <br>
+            <li><a href="https://drive.google.com/open?id=1-LCTFY3E4NDjUsp4_MGZz19Ac3hNFwsf&authuser=l.diba4%40gmail.com&usp=drive_fs" target="_blank"> جلسه ششم : ابعاد یک سلول(Width & Height)</a><br></li>
+            <br>
+            <li><a href="https://drive.google.com/open?id=1-dCTn3T_0k6WZn8WShOk7WljfF83su7k&authuser=l.diba4%40gmail.com&usp=drive_fs" target="_blank"> جلسه هفتم : افزودن ردیف و ستون(Insert row & column)</a><br></li>
+            <br>
+            <li><a href="https://drive.google.com/open?id=1-beI-JFekakSl0h5eCmCegX3qMzvjzAg&authuser=l.diba4%40gmail.com&usp=drive_fs" target="_blank"> جلسه هشتم : شماره های ردیف(Numbers)</a><br></li>
+            <br>
+            <li><a href="https://drive.google.com/open?id=1-TnsEn2HB6nAcCDCTp6TIIqx-_aKsW-M&authuser=l.diba4%40gmail.com&usp=drive_fs" target="_blank"> جلسه نهم : آماده کردن برای پرینت(Print)</a><br></li>
+            <br>
+        </ul>
+    </nav>
+    <article>
+        <h2>یادگیری اکسل از صفر تا صد و گام به گام :</h2>
+        <p>یادگیری مجموعه برنامه های آفیس و خصوصاً اکسل از پیش نیازهای استخدام در هر شرکتی است.
+        برای پیدا کردن کاری که دوست دارید و یا پیشرفت در کار، می بایست در این مجموعه برنامه ها تا حدی خوب باشید.</p>
+        <p>من سعی کردم در این فایل های آموزشی به شما کمک کنم تا در برنامه ی اکسل به حدی برسید که بتوانید
+        پروژه های کاری، گزارشات، نمودارها و ... را برای شرکتی که در آن استخدام شدید، انجام دهید.</p>
+        <p>برای یادگیری اکسل از صفر تا صد و کام به گام از لینک های آموزشی قابل دانلود در این سایت استفاده کنید.</p>
+        <p>اگر نیاز به مثال های کاربری بیشتری را حس می کنید، با من از طریق لینک های انتهای صفحه در تماس باشید.
+        قطعاً از نظراتتان استفاده خواهم کرد، پس خوشحال می شوم که آنها را با من در میان بگذارید.</p>
+        <p>سعی می کنم در مابین آموزش ها از سایر برنامه های آفیس پرکاربرد مثل word, powerpoint, outlook و ... هم مثالهایی کاربردی بیان کنم.</p>
+    </article>
+</section>
+<footer>
+    با من از طریق درگاه های ارتباطی زیر همراه باشید :<br>
+    <a href="instagram.com/lets_learn_excell" target="_blank">Instagram</a>
+    <a href="l.diba4@gmail.com" target="_blank">Mail</a>
+</footer>
+</body>
+</html>
