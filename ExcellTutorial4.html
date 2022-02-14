@@ -14,6 +14,8 @@
         header {
             background-color: #3cb371;
             /*background-color: #000000;*/
+            border: 1px #3cb371 solid;
+            border-radius: 10px;
             padding: 15px;
             text-align: center;
             font-size: 30px;
@@ -24,9 +26,11 @@
         nav {
             float: right;
             width: 20%;
-            height: 1500px; /* only for demonstration, should be removed */
+            height: 1000px; /* only for demonstration, should be removed */
             background: #88fc88;
             padding: 10px;
+            border: 1px #88fc88 solid;
+            border-radius: 10px;
             font-family: "B Nazanin";
         }
         /* Style the list inside the menu */
@@ -41,6 +45,7 @@
             padding: 20px;
             width: 80%;
             background-color: #f1f1f1;
+            border-radius: 10px;
             /*height: 300px; !* only for demonstration, should be removed *!*/
             direction: rtl;
             font-family: "B Nazanin";
@@ -88,6 +93,35 @@
             color: purple;
             font-family: "B Yekan";
         }
+
+        .MyCenter{
+            text-align:center;
+        }
+
+        .MyPagin {
+            display: inline-block;
+        }
+
+        .MyPagin a {
+            color: black;
+            float: right;
+            padding: 8px 16px;
+            margin:0 2px;
+            text-decoration: none;
+            border:2px solid violet;
+            border-radius:50px;
+            font-family: "B Homa";
+        }
+
+        .MyPagin a:hover:not(.active) {
+            background-color:#f2f2f2;
+        }
+
+        .MyPagin a.active{
+            background-color:#2196F3;
+            color:pink;
+        }
+
 
         footer {
             background-color: #777;
@@ -174,114 +208,7 @@
         <p>سعی می کنم در مابین آموزش ها از سایر برنامه های آفیس پرکاربرد مثل word, powerpoint, outlook و ... هم مثالهایی کاربردی بیان کنم.</p>
     </article>
 
-    <vid-text>
-        <p><strong>جلسه اول :</strong></p><br>
-        <p>در جلسه اول سعی بر این بوده که یه آشنایی نسبی با اکسل آموزش داده بشه.
-                برای یادگیری هر چیزی باید از پایه و جزء به جزء تمامی موارد فراگرفته بشه.
-        اصلی ترین قسمت اکسل، اجزاء تشکیل دهنده ی آن یعنی سلول ها هستند. هر سلول، یه اسم منحصر به خودش رو داره
-        که از ترکیب یک حرف که نشان دهنده ی ستون قرارگیری اون سلوله و یک عدد که نشان دهنده ی شماره ی ردیف قرارگیری اونه،
-                    به وجود اومده. هر سلول می تونه در برگیرنده ی یک حرف، کلمه، متن، فرمول و ... باشه.
-        </p>
-    </vid-text>
-    <vid><a href="Videos/جلسه%20اول.mp4" target="_blank">
-            برای دیدن ویدئوی آموزش، کلیک کنید.
-        </a>
-    </vid>
-
-
-    <vid-text>
-        <p><strong>جلسه دوم :</strong></p><br>
-        <p>در این ویدئو با هم شروع می کنیم به طراحی یک جدول. جدول هایی که ما همیشه دیدیم، طوری بوده که دارای یه سری خطوط اطراف نوشته ها بوده.
-        برای ساختن این خطوط در اطراف جدولمون از زبانه ی Home و قسمت Borders استفاده می کنیم و محل خطوط و نوع خطوط رو مشخص می کنیم. ویدئو رو با هم ببینیم. </p>
-    </vid-text>
-
-    <vid><a href="Videos/جلسه دوم.mp4" target="_blank">
-        برای دیدن ویدئوی آموزش، کلیک کنید.
-    </a>
-    </vid>
-
-    <vid-text>
-        <p><strong>جلسه سوم :</strong></p><br>
-        <p>در این جلسه نحوه ی جدا کردن ردیف ها و ستون ها از همدیگر آموزش داده شده که در واقع
-        همون Border بندی داخلی جدوله که می تونیم به صورت های مختلفی این کار رو انجام بدیم.
-        این عمل هم مانند Border های خارجی از زبانه ی Home و قسمت Borders استفاده میشه.</p>
-    </vid-text>
-
-    <vid><a href="Videos/جلسه سوم.mp4" target="_blank">
-        برای دیدن ویدئوی آموزش، کلیک کنید.
-    </a>
-    </vid>
-
-<!--    <vid>-->
-<!--        <video width="350" height="280" controls poster="Image/logo.jpg">-->
-<!--            <source src="Videos/جلسه سوم.mp4" type="video/mp4">-->
-<!--        </video>-->
-<!--    </vid>-->
-
-    <vid-text>
-        <p><strong>جلسه چهارم :</strong></p><br>
-        <p> در این جلسه میخوایم Font جدولمون رو تغییر بدیم و بتونیم ظاهر جدولمون رو با این کار زیباتر
-        کنیم تا هر کسی که به جدولمون نگاه کنه، متوجه بشه که کاری سرسری و بی تجربه نمیبینه. گاهی برای
-        اینکه کسی متوجه بشه شما حرفه ای هستین، نیازه که به ظاهر جدولتون حسابی برسید. من دارم این کار رو مرحله به مرحله بهتون آمورش میدم.
-        <br>
-            <strong>موفق باشین حرفه ای ها.</strong>&#128526;</p>
-    </vid-text>
-
-    <vid><a href="Videos/جلسه چهارم.mp4" target="_blank">
-        برای دیدن ویدئوی آموزش، کلیک کنید.
-    </a>
-    </vid>
-
-    <vid-text>
-        <p><strong>جلسه پنجم :</strong></p><br>
-        <p>تو این جلسه یاد میگیری چطور محتویات یک سلول رو مکان نمایی کنی. یعنی جای خاصی بهشون بدی
-            و بهشون بگی بالا ، راست، پایین یا چپ یه سلول بشینن. اینجا همه چیز برای بهتر شدن هست.
-        همه ی جلسات رو دنبال کنین تا با هم آروم آروم بهتر و بهتر بشیم.</p>
-    </vid-text>
-
-    <vid><a href="Videos/جلسه پنجم.mp4" target="_blank">
-        برای دیدن ویدئوی آموزش، کلیک کنید.
-    </a>
-    </vid>
-
-    <vid-text>
-        <p><strong>جلسه ششم :</strong></p><br>
-        <p>توی این جلسه می تونیم اندازه های سلولمون رو تنظیم کنیم.
-            توی ویدئو من به اشتباه به عرض سلول میگم طول که ببخشید دیگه. &#128517 بعدش توی یه نظرسنجی که
-        تو اینستاگرام گذاشتم، همه گفتن که عرض و ارتفاعه و خب منم قبول کردم دیگه. راست هم می گن توی
-        اکسل ما برای تنظیم ابعاد سلولمون از cell width و cell height استفاده می کنیم و width یعنی عرض
-         و height هم که یعنی ارتفاع.</p>
-    </vid-text>
-
-    <vid><a href="Videos/جلسه ششم.mp4" target="_blank">
-        برای دیدن ویدئوی آموزش، کلیک کنید.
-    </a>
-    </vid>
-
-    <vid-text>
-        <p><strong>جلسه هفتم :</strong></p><br>
-        <p>اینجا قراره یاد بگیریم چطور و به چند روش می تونیم یک یا چند ستون و یا ردیف رو به جدولمون
-        اضافه کنیم و یا حذف کنیم. <br>
-        برا اینکه تمرینای بشتری دریافت کنین یا توضیحات بیشتری داشته باشین حتما با من در ارتباط باشین.
-            از طریق لینک های انتهای صفحه ...</p>
-    </vid-text>
-
-    <vid><a href="Videos/جلسه هفتم.mp4" target="_blank">
-        برای دیدن ویدئوی آموزش، کلیک کنید.
-    </a>
-    </vid>
-
-    <vid-text>
-        <p><strong>جلسه هشتم :</strong></p><br>
-        <p>این جلسه برای اینه که به ردیف های جدولمون شماره بدیم. این شماره دادنه هم چند روش داره
-            که با هم میبینیم و یاد میگیریم. کلاً داریم آماده میشیم که زمینه رو آروم آروم برای شروع فرمول
-         نویسی مهیا کنیم. آروم آروم و قدم به قدم.</p>
-    </vid-text>
-
-    <vid><a href="Videos/جلسه هشتم.mp4" target="_blank">
-        برای دیدن ویدئوی آموزش، کلیک کنید.
-    </a>
-    </vid>
+    <br><br>
 
     <vid-text>
         <p><strong>جلسه نهم :</strong></p><br>
@@ -322,6 +249,18 @@
         برای دیدن ویدئوی آموزش، کلیک کنید.
     </a>
     </vid>
+
+
+    <br><br>
+
+    <div class="MyCenter">
+        <div class="MyPagin">
+            <a href="ExcellTutorial2.html">اولین صفحه</a>
+            <a href="ExcellTutorial3.html">1</a>
+            <a href="ExcellTutorial4.html" class="active">2</a>
+            <a href="#">آخرین صفحه</a>
+        </div>
+    </div>
 
 </section>
 
